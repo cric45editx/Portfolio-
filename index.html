@@ -1,1 +1,171 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Kumar | Video Editor & Motion Designer</title>
+    <meta name="description" content="Freelance video editor based in Hyderabad, India. High-retention reels, gaming montages, cinematic edits and professional video editing services.">
+    <meta name="theme-color" content="#080b12">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            950: "#080b12",
+                            900: "#0c111b",
+                            800: "#121a27",
+                            700: "#1c2838"
+                        },
+                        electric: {
+                            400: "#67e8f9",
+                            500: "#22d3ee",
+                            600: "#0891b2"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "system-ui", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+        body { background: #080b12; color: #e5e7eb; font-family: "Inter", system-ui, sans-serif; overflow-x: hidden; }
+        ::selection { background: #22d3ee; color: #080b12; }
+        .gradient-text { background: linear-gradient(110deg, #67e8f9, #3b82f6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .glass { background: rgba(18, 26, 39, 0.8); border: 1px solid rgba(148, 163, 184, 0.12); backdrop-filter: blur(16px); }
+        .card { background: #0e1520; border: 1px solid #202b3b; transition: transform 0.25s ease, border-color 0.25s ease; }
+        .card:hover { transform: translateY(-5px); border-color: rgba(34, 211, 238, 0.45); }
+        .btn-primary { background: linear-gradient(110deg, #22d3ee, #3b82f6); color: #061019; font-weight: 800; transition: opacity 0.2s ease, transform 0.2s ease; }
+        .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+        .btn-secondary { border: 1px solid #334155; background: rgba(15, 23, 42, 0.5); color: #e2e8f0; transition: border-color 0.2s ease, background 0.2s ease; }
+        .btn-secondary:hover { border-color: #22d3ee; background: rgba(34, 211, 238, 0.06); }
+        .section-label { color: #67e8f9; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
+        .price-glow { text-shadow: 0 0 30px rgba(34, 211, 238, 0.18); }
+        .dot-grid { background-image: radial-gradient(rgba(148,163,184,0.13) 1px, transparent 1px); background-size: 24px 24px; }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/70 bg-[#080b12]/90 backdrop-blur-xl">
+        <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[72px] flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-3" aria-label="Kiran Kumar home">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-slate-950 font-black text-lg">K</div>
+                <div>
+                    <div class="font-extrabold text-white tracking-tight">KIRAN KUMAR</div>
+                    <div class="text-[10px] tracking-[0.2em] text-slate-500 uppercase">Video Editor</div>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#work" class="hover:text-cyan-300 transition">Portfolio</a>
+                <a href="#pricing" class="hover:text-cyan-300 transition">Rate Card</a>
+                <a href="#quote" class="hover:text-cyan-300 transition">Get a Quote</a>
+            </div>
+            <a href="https://wa.me/918639968518" target="_blank" rel="noopener noreferrer" class="btn-primary rounded-full px-5 py-2.5 text-sm">
+                Let's Talk <span aria-hidden="true">↗</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="relative min-h-[90vh] flex items-center pt-28 pb-20 overflow-hidden">
+            <div class="absolute inset-0 dot-grid opacity-30 pointer-events-none"></div>
+            <div class="absolute top-10 right-[-100px] w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+            <div class="relative max-w-7xl mx-auto px-5 sm:px-8 w-full grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/20 bg-cyan-400/5 text-cyan-300 text-xs font-semibold mb-8">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> Available for freelance projects
+                    </div>
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.08] text-white">
+                        Your vision.<br>My <span class="gradient-text">editing.</span><br>One epic story.
+                    </h1>
+                    <p class="mt-7 text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl">
+                        Hey, I'm Kiran Kumar, a freelance video editor from Hyderabad, India. I turn raw footage into engaging reels, cinematic videos, and edits that make people stop scrolling.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-9">
+                        <a href="#work" class="btn-primary px-7 py-3.5 rounded-xl text-sm">Explore My Work <span aria-hidden="true">↗</span></a>
+                        <a href="#pricing" class="btn-secondary px-7 py-3.5 rounded-xl text-sm font-semibold">View Rate Card</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="py-24 border-t border-slate-800/60">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <p class="section-label mb-4">Selected projects</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-12">Latest Edits</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card rounded-2xl p-6">
+                        <h3 class="font-bold text-white text-xl">Gaming Montage</h3>
+                        <p class="text-slate-400 text-sm mt-2">High-energy cuts and visual effects.</p>
+                    </div>
+                    <div class="card rounded-2xl p-6">
+                        <h3 class="font-bold text-white text-xl">Cinematic Vlog</h3>
+                        <p class="text-slate-400 text-sm mt-2">Smooth storytelling and color grading.</p>
+                    </div>
+                    <div class="card rounded-2xl p-6">
+                        <h3 class="font-bold text-white text-xl">Short Form Reel</h3>
+                        <p class="text-slate-400 text-sm mt-2">High retention engagement edits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-24 bg-[#0c111b] border-t border-slate-800/60">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <p class="section-label mb-4">Investment</p>
+                    <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">Simple, Transparent Pricing</h2>
+                    <p class="mt-4 text-slate-400 text-lg">Choose the perfect editing package for your project requirements.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 items-stretch">
+                    <div class="card rounded-3xl p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="text-cyan-400 font-bold text-sm tracking-wider uppercase mb-2">Starter Tier</div>
+                            <h3 class="text-2xl font-black text-white mb-4">Basic Edit</h3>
+                            <p class="text-slate-400 text-sm mb-6">Perfect for simple cuts, basic transitions, and standard social media clips.</p>
+                            <div class="mb-8">
+                                <span class="text-4xl font-black text-white price-glow">₹250</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/918639968518" class="w-full text-center py-4 rounded-xl font-bold btn-secondary block">Book Basic</a>
+                    </div>
+                    <div class="card rounded-3xl p-8 flex flex-col justify-between border-cyan-500/50 bg-[#121a27]">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-cyan-400 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full tracking-widest">Popular</div>
+                        <div>
+                            <div class="text-cyan-400 font-bold text-sm tracking-wider uppercase mb-2">Growth Tier</div>
+                            <h3 class="text-2xl font-black text-white mb-4">Standard Edit</h3>
+                            <p class="text-slate-400 text-sm mb-6">Includes advanced motion graphics, sound design, engaging captions, and color grading.</p>
+                            <div class="mb-8">
+                                <span class="text-4xl font-black text-white price-glow">₹400</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/918639968518" class="w-full text-center py-4 rounded-xl font-bold btn-primary block">Book Standard</a>
+                    </div>
+                    <div class="card rounded-3xl p-8 flex flex-col justify-between">
+                        <div>
+                            <div class="text-cyan-400 font-bold text-sm tracking-wider uppercase mb-2">Scale Tier</div>
+                            <h3 class="text-2xl font-black text-white mb-4">Premium Edit</h3>
+                            <p class="text-slate-400 text-sm mb-6">Full cinematic overhaul, custom VFX, priority turnaround, and multiple variations.</p>
+                            <div class="mb-8">
+                                <span class="text-4xl font-black text-white price-glow">₹700</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/918639968518" class="w-full text-center py-4 rounded-xl font-bold btn-secondary block">Book Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800/80 bg-[#060910] py-12 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Kiran Kumar. Built with precision.</p>
+    </footer>
+</body>
+</html>
